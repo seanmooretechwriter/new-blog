@@ -1,0 +1,21 @@
+{
+  "name": "agentic007-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --watch",
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "dev": "eleventy --serve --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.4"
+  }
+}

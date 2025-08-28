@@ -1,0 +1,25 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Simple Blog</title>
+    <link>{{ metadata.url }}</link>
+    <description>A simple, old-school blog about web development and programming</description>
+    <language>en</language>
+    <lastBuildDate>{{ collections.posts | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    
+    {%- for post in collections.posts | reverse %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ post.url | absoluteUrl(metadata.url) }}</link>
+      <description>{{ post.templateContent | htmlToAbsoluteUrls(metadata.url) | safe }}</description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <dc:creator>{{ metadata.author.name }}</dc:creator>
+      <guid>{{ post.url | absoluteUrl(metadata.url) }}</guid>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>

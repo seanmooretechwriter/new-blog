@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<article>
+    <header>
+        <h1>{{ title }}</h1>
+        <div class="post-meta">
+            Published on {{ date.toDateString() }}
+        </div>
+    </header>
+    
+    {{ content | safe }}
+    
+    <footer>
+        <p><a href="/">&larr; Back to home</a></p>
+    </footer>
+</article>

@@ -1,0 +1,9 @@
+{
+  "title": "My Simple Blog",
+  "url": "https://your-domain.com",
+  "description": "A simple, old-school blog about web development and programming",
+  "author": {
+    "name": "Your Name",
+    "email": "your-email@example.com"
+  }
+}
