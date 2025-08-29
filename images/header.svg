@@ -1,0 +1,50 @@
+<svg viewBox="0 0 650 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Drop shadow filter -->
+  <defs>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.2"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Terminal window frame -->
+  <rect x="20" y="20" width="610" height="195" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="5" filter="url(#dropShadow)"/>
+  
+  <!-- Terminal header bar -->
+  <rect x="20" y="20" width="610" height="25" fill="#252525" rx="5"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="35" cy="32.5" r="5" fill="#ff5f56"/>
+  <circle cx="50" cy="32.5" r="5" fill="#ffbd2e"/>
+  <circle cx="65" cy="32.5" r="5" fill="#27c93f"/>
+  
+  <!-- Terminal title -->
+  <text x="325" y="37" text-anchor="middle" fill="#999" font-family="monospace" font-size="12">ai-dev-blog</text>
+  
+  <!-- Code/prompt lines -->
+  <text x="30" y="65" fill="#00ff00" font-family="monospace" font-size="14">$</text>
+  <text x="45" y="65" fill="#00ff00" font-family="monospace" font-size="14">claude "Explain this spaghetti codebase to me like I'm five"</text>
+  
+  <text x="30" y="85" fill="#00cc00" font-family="monospace" font-size="14"># AI analyzing code...</text>
+  
+  <text x="30" y="105" fill="#00ff00" font-family="monospace" font-size="14">function makeItMakeSense() {</text>
+  <text x="60" y="125" fill="#00ff00" font-family="monospace" font-size="14">// Works on my machine</text>
+  <text x="60" y="145" fill="#00ff00" font-family="monospace" font-size="14">return "It works!"; // trust me, bro</text>
+  <text x="30" y="165" fill="#00ff00" font-family="monospace" font-size="14">}</text>
+  
+  <text x="30" y="185" fill="#ff69b4" font-family="monospace" font-size="14" opacity="0.9">Decoupling noodles for efficient, uniform cooking...</text>
+  
+  <!-- New prompt line -->
+  <text x="30" y="205" fill="#00ff00" font-family="monospace" font-size="14">$</text>
+  
+  <!-- Cursor blink on new line -->
+  <rect x="45" y="192" width="8" height="14" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
