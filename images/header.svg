@@ -25,7 +25,7 @@
   <circle cx="65" cy="32.5" r="5" fill="#27c93f"/>
   
   <!-- Terminal title -->
-  <text x="325" y="37" text-anchor="middle" fill="#999" font-family="monospace" font-size="12">ai-dev-blog</text>
+  <text x="325" y="37" text-anchor="middle" fill="#999" font-family="monospace" font-size="12">aicodechef.com</text>
   
   <!-- Code/prompt lines -->
   <text x="30" y="65" fill="#00ff00" font-family="monospace" font-size="14">$</text>
