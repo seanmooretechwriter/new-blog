@@ -23,6 +23,13 @@ module.exports = function(eleventyConfig) {
     return date.toDateString();
   });
   
+  // Random quote filter
+  eleventyConfig.addFilter("randomQuote", function(quotes) {
+    if (!quotes || quotes.length === 0) return null;
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+  });
+  
   return {
     dir: {
       input: ".",

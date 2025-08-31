@@ -3,9 +3,11 @@ layout: base.njk
 title: Home
 ---
 
-# Welcome to My Blog
+# Welcome to AI Code Chef
 
-This is a simple, old-school blog built with Eleventy. Fast, minimal, and focused on content.
+A blog about AI-assisted programming in the modern world.
+
+---
 
 ## Recent Posts
 
@@ -19,4 +21,5 @@ This is a simple, old-school blog built with Eleventy. Fast, minimal, and focuse
 
 Stay updated with new posts by subscribing to our [RSS feed](/feed.xml).
 
-*"The best websites are fast websites."*
+{% set randomQuote = quotes | randomQuote %}
+*"{{ randomQuote.text }}"* — {{ randomQuote.author }}

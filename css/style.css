@@ -3,7 +3,10 @@
 
 /* Base - Matrix Dark Theme */
 body {
-  font: 18px/1.5 "Times New Roman", serif;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
   color: #00dd00;
   background: #0a0a0a;
   max-width: 650px;
@@ -24,8 +27,9 @@ body {
 
 /* Header */
 header h1 {
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 28px;
-  font-weight: normal;
+  font-weight: 600;
   margin-bottom: 8px;
   letter-spacing: -0.5px;
   color: #00ff00;
@@ -52,9 +56,9 @@ nav a {
 nav a:hover { color: #00ff00; }
 
 /* Typography */
-h1 { font-size: 28px; margin: 32px 0 16px 0; font-weight: normal; color: #d5e31b; }
-h2 { font-size: 22px; margin: 28px 0 12px 0; font-weight: normal; color: #d5e31b; }
-h3 { font-size: 19px; margin: 24px 0 10px 0; font-weight: bold; color: #d5e31b; }
+h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin: 32px 0 16px 0; font-weight: 700; color: #d5e31b; }
+h2 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin: 28px 0 12px 0; font-weight: 600; color: #d5e31b; }
+h3 { font-family: 'Space Grotesk', sans-serif; font-size: 19px; margin: 24px 0 10px 0; font-weight: 600; color: #d5e31b; }
 p { margin-bottom: 16px; }
 ul, ol { margin: 0 0 16px 32px; }
 li { margin-bottom: 4px; }
@@ -66,7 +70,7 @@ a:hover { color: #00ff00; }
 
 /* Code */
 code {
-  font-family: "Courier New", monospace;
+  font-family: 'JetBrains Mono', monospace;
   background: #1a1a1a;
   color: #00ff00;
   padding: 2px 4px;
@@ -75,7 +79,7 @@ code {
 }
 
 pre {
-  font-family: "Courier New", monospace;
+  font-family: 'JetBrains Mono', monospace;
   background: #1a1a1a;
   color: #00ff00;
   padding: 16px;
