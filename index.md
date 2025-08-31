@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Home
+description: "Real world AI coding examples and practical techniques for debugging, refactoring, and code review using Claude, ChatGPT, Cursor. Clean up messy code fast."
 ---
 
 # Welcome to AI Code Chef

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
-    <meta name="description" content="{{ description or 'AI-assisted programming blog - where spaghetti code gets transformed into clean, efficient solutions.' }}">
+    <meta name="description" content="{{ description or metadata.description }}">
     <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}AI Code Chef">
     <meta property="og:description" content="{{ description or 'AI-assisted programming blog' }}">
     <meta property="og:url" content="https://aicodechef.com{{ page.url }}">
