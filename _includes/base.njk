@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} | {% endif %}{{ metadata.title }}</title>
-    <meta name="description" content="{{ metadata.description }}">
+    <meta name="description" content="{{ description or 'AI-assisted programming blog - where spaghetti code gets transformed into clean, efficient solutions.' }}">
+    <meta property="og:title" content="{% if title %}{{ title }} - {% endif %}AI Code Chef">
+    <meta property="og:description" content="{{ description or 'AI-assisted programming blog' }}">
+    <meta property="og:url" content="https://aicodechef.com{{ page.url }}">
+    <meta property="og:type" content="article">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">

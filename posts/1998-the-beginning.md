@@ -1,13 +1,13 @@
 ---
-title: "1997: When Spaghetti Code Was Just Pasta"
-date: 1997-12-01
+title: "1998: When Spaghetti Code Was Just Pasta"
+date: 1998-12-12
 tags: posts
 layout: post.njk
 ---
 
-# 1997: When Spaghetti Code Was Just Pasta
+# 1998: When Spaghetti Code Was Just Pasta
 
-Before AI could help us debug, before Stack Overflow existed, and when Yahoo was how we searched the web - I registered my first domain and started coding professionally.
+Before AI could help us debug, before Stack Overflow existed, and when Yahoo was how we searched the web - I was coding professionally and building my [first ecommerce shopping website](https://web.archive.org/web/19981212031117/http://www.mortac.com/) while still in college. I wouldn't [register my first domain](https://web.archive.org/web/19990221050924/http://www.freshsites.com/) until early 1999, but the foundation was already being laid.
 
 Back then, we wrote Perl CGI scripts that would make modern developers weep. No frameworks, no package managers, just raw code and hope. Every form submission was an adventure in parsing. Every database connection was hand-rolled.
 

@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   // Copy images to output
   eleventyConfig.addPassthroughCopy("images");
   
+  // Copy robots.txt to output
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  
   // Copy any static assets
   eleventyConfig.addPassthroughCopy("assets");
   
