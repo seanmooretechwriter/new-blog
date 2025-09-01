@@ -11,12 +11,12 @@ eleventyExcludeFromCollections: true
     <priority>1.0</priority>
   </url>
   {%- for page in collections.all %}
-  {%- if page.url and page.url != '/' %}
+  {%- if page.url and page.url != '/' and page.url != '/README/' %}
   <url>
     <loc>https://aicodechef.com{{ page.url }}</loc>
     <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>{% if page.data.tags and page.data.tags.includes('posts') %}monthly{% else %}yearly{% endif %}</changefreq>
+    <priority>{% if page.data.tags and page.data.tags.includes('posts') %}0.8{% else %}0.6{% endif %}</priority>
   </url>
   {%- endif %}
   {%- endfor %}
