@@ -1,6 +1,6 @@
 ---
 title: Building an Application with Claude Code (CLI)
-date: 2025-01-26
+date: 2025-09-01
 description: Real-world experience using Claude Code CLI for AI-assisted game development, including debugging techniques, code quality insights, and practical tips for managing token limits.
 tags: posts
 layout: post.njk
