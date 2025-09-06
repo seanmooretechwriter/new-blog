@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
   // Copy robots.txt to output
   eleventyConfig.addPassthroughCopy("robots.txt");
   
+  // Copy form success page
+  eleventyConfig.addPassthroughCopy("form-success.html");
+  
   // Copy any static assets
   eleventyConfig.addPassthroughCopy("assets");
   
