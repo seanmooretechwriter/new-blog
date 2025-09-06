@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
   // Copy form success page
   eleventyConfig.addPassthroughCopy("form-success.html");
   
+  // Copy redirects file
+  eleventyConfig.addPassthroughCopy("_redirects");
+  
   // Copy any static assets
   eleventyConfig.addPassthroughCopy("assets");
   
