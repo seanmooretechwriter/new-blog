@@ -117,6 +117,7 @@ hr {
 /* Contact Form */
 .form-group {
   margin-bottom: 20px;
+  clear: both;
 }
 
 .form-group label {
@@ -124,6 +125,8 @@ hr {
   margin-bottom: 8px;
   color: #00ff00;
   font-weight: 600;
+  width: 100%;
+  clear: both;
 }
 
 .form-group input,
@@ -144,6 +147,10 @@ hr {
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-top: 8px;
 }
 
 .form-group input:focus,
