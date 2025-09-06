@@ -1,5 +1,5 @@
 # Form submission redirect
-/contact/ /form-success.html 200
+/thanks /thanks/ 301
 
-# Default redirects
+# Default redirects for SPA-like behavior
 /*    /index.html   200
