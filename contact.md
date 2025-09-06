@@ -8,7 +8,7 @@ description: Get in touch with AI Code Chef for questions, feedback, or collabor
 
 Have a question, feedback, or want to share your AI development experience? I'd love to hear from you!
 
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
   <p style="display: none;">
     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
   </p>
