@@ -136,6 +136,14 @@ hr {
   color: #00dd00;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 16px;
+  display: block;
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 .form-group input:focus,
