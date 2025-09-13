@@ -1,6 +1,6 @@
 ---
 title: Building a Custom Game with Claude Code (CLI)
-date: 2025-09-06
+date: 2025-09-13
 description: A detailed journey of creating a complete custom game using Claude Code CLI, covering everything from SVG graphics generation to automated testing, code quality challenges, and practical development strategies.
 tags: posts
 layout: post.njk
