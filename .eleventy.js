@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
   
   // Copy images to output
   eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("images/ai-showdown");
   
   // Copy robots.txt to output
   eleventyConfig.addPassthroughCopy("robots.txt");

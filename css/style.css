@@ -192,6 +192,22 @@ footer {
   text-align: center;
 }
 
+/* Blog post images */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main a img:hover {
+  border-color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
 /* Mobile */
 @media (max-width: 680px) {
   body { 
